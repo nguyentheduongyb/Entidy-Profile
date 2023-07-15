@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "64b008d15f7dd024acb4a4ab",
+        "title": "Handling user authentication with Redux Toolkit",
+        "image": "/image",
+        "content": "User authentication can be handled in a myriad of ways. Because of this feature’s importance, we’ve seen more companies provide authentication solutions to ease the process — Firebase, Auth0, and NextAuth.js, to name a few.",
+        "shortcontent": "User authentication can be handled in a myriad of ways. Because of this feature’s importance",
+        "keywordseo": "reactjs",
+        "descriptionseo": "reactjs lib",
+        "author": {
+            "email": "nguyentheduongyb@gmail.com",
+            "username": "ntd"
+        },
+        "createdAt": "2023-07-13T14:23:13.728Z",
+        "updatedAt": "2023-07-13T14:23:13.728Z",
+        "slug": "handling-user-authentication-with-redux-toolkit-2a1c6ndYG"
+    }
+]
