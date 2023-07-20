@@ -5,18 +5,16 @@ import { Carousel } from 'flowbite-react';
 
 import { LiaPercentSolid } from "react-icons/lia"
 import { HiFire } from "react-icons/hi"
-import backendURL from "~/backendURL";
+
+import data from "~/backendURL/data";
+import { array } from "prop-types";
 const HomePage = () => {
 
-  const [arr, setArr] = useState<string[]>([])
+  const [arr, setArr]: any = useState([])
   useEffect(() => {
-    backendURL.get("api/blog")
-      .then((response) => {
-        setArr(response.data)
-        console.log(response.data);
-
-      })
+    setArr(data)
   }, [])
+
   return (
     <div className="container md:flex-row flex flex-col">
       <Carousel className="md:hidden h-32">
@@ -34,75 +32,25 @@ const HomePage = () => {
             <button className="font-medium text-sm text-[#288ad6]">Xem tất cả &gt;</button>
           </div>
           <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <li className="rounded-md bg-[#f8f8f8] overflow-hidden h-full w-full">
-              <a href="">
-                <div>
-                  <img className="" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" />
-                </div>
-                <div className="gap-2 p-2.5">
-                  <div className="">
-                    {/* <img className="w-[40px] h-[40px] object-cover" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" /> */}
+            {arr.map((item: any, index: number) => (
+              <li key={index} className="rounded-md bg-[#f8f8f8] overflow-hidden h-full w-full">
+                <Link href={`/blog/${item.slug}`}>
+                  <div>
+                    <img className="" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" />
                   </div>
-                  <div className="text-sm text-[#333333]">
-                    <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                    <div className="mt-2 text-xs">
-                      <span className="p-1 rounded bg-[#07A358] text-white font-medium mr-2">130.000vnđ</span>
-                      <span>Mô phỏng</span>
+                  <div className="p-2.5">
+                    <div className="text-sm text-[#333333]">
+                      <strong className="line-clamp-2 text-sm">{item.title}</strong>
+                      <div className="mt-2 text-sm">
+                        <span className="line-clamp-4">{item.shortcontent}</span>
+                      </div>
                     </div>
-                  </div>
-                </div >
-              </a >
-              <ul className="list-disc flex flex-col gap-2 m-5 text-[#1a7ecb] text-xs">
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-              </ul>
-            </li >
-            <li className="rounded-md bg-[#f8f8f8] overflow-hidden h-full w-full">
-              <a href="">
-                <div>
-                  <img className="" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" />
-                </div>
-                <div className="gap-2 p-2.5">
-                  <div className="">
-                    {/* <img className="w-[40px] h-[40px] object-cover" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" /> */}
-                  </div>
-                  <div className="text-sm text-[#333333]">
-                    <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                    <div className="mt-2 text-xs">
-                      <span className="p-1 rounded bg-[#07A358] text-white font-medium mr-2">130.000vnđ</span>
-                      <span>Mô phỏng</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <ul className="list-disc flex flex-col gap-2 m-5 text-[#1a7ecb] text-xs">
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-              </ul>
-            </li>
-            <li className="rounded-md bg-[#f8f8f8] overflow-hidden h-full w-full">
-              <a href="">
-                <div>
-                  <img className="" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" />
-                </div>
-                <div className="gap-2 p-2.5">
-                  <div className="">
-                    {/* <img className="w-[40px] h-[40px] object-cover" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" /> */}
-                  </div>
-                  <div className="text-sm text-[#333333]">
-                    <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                    <div className="mt-2 text-xs">
-                      <span className="p-1 rounded bg-[#07A358] text-white font-medium mr-2">130.000vnđ</span>
-                      <span>Mô phỏng</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <ul className="list-disc flex flex-col gap-2 m-5 text-[#1a7ecb] text-xs">
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-                <li><a href="">Hướng dẫn nạp thẻ garena</a></li>
-              </ul>
-            </li>
+                  </div >
+                </ Link>
+              </li >
+            )
+            )}
+
           </ul >
         </div >
 
