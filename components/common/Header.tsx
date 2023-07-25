@@ -50,9 +50,9 @@ const Header = () => {
                 }
         };
         return (
-                <header className="border-b w-full sticky top-0 z-[9999999999999999999999]">
+                <header className="border-b w-full sticky top-0 z-[9999999999999999999999] bg-white">
                         <Navbar
-                                className="container items-center sm:px-0 mx-0 "
+                                className="container items-center sm:px-0 mx-0 bg-white"
                                 rounded
                         >
                                 <div className="flex md:hidden md:order-2">

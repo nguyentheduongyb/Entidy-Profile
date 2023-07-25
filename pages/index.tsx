@@ -16,163 +16,85 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div className="container md:flex-row flex flex-col">
-      <Carousel className="md:hidden h-32">
-        <img className="w-full" src="https://cdn.tgdd.vn/2023/07/banner/sn18-720-220-720x220-2.png" alt="" />
-        <img className="w-full" src="https://cdn.tgdd.vn/2023/07/banner/sn18-720-220-720x220-2.png" alt="" />
-      </Carousel>
-      <div className="hidden w-1/3 md:flex md:order-2 gap-2 flex-col pt-10">
-        <img src="https://cdn.tgdd.vn/2023/07/banner/sn18-720-220-720x220-2.png" alt="" />
-        <img src="https://cdn.tgdd.vn/2023/07/banner/sn18-720-220-720x220-2.png" alt="" />
-      </div >
-      <div className="md:w-3/4 pr-0 md:pr-8 ">
-        <div>
-          <div className="w-full flex justify-between items-center">
-            <h2 className="py-4 text-lg uppercase font-bold text-[#288ad6]">Tin tức nổi bật</h2>
-            <button className="font-medium text-sm text-[#288ad6]">Xem tất cả &gt;</button>
+    <div className="bg-gradient h-full py-12">
+      <div className="container md:flex-row">
+        <div><span className="text-xl font-bold">Tất cả sản phẩm và source code của tôi có trên:</span> <a className="text-xl text-blue-500" href="https://github.com/nguyentheduongyb" target="_blank">https://github.com/nguyentheduongyb</a></div>
+        <p className="text-xl mt-2 font-bold text-teal-500">1 vài sản phẩm nổi bật của tôi: </p>
+        <div className="w-full flex flex-wrap justify-center gap-16 mt-12 mb-12">
+          <div className="w-2/5 p-2 bg-white border rounded-2xl shadow-2xl">
+            <Carousel className="h-56">
+              <img className="w-full" src="/image/Entidy/1.png" alt="" />
+              <img className="w-full" src="/image/Entidy/2.png" alt="" />
+              <img className="w-full" src="/image/Entidy/3.png" alt="" />
+              <img className="w-full" src="/image/Entidy/4.png" alt="" />
+              <img className="w-full" src="/image/Entidy/5.png" alt="" />
+              <img className="w-full" src="/image/Entidy/6.png" alt="" />
+            </Carousel>
+            <div className="p-3">
+              <strong>Website thời trang tích hợp thanh toán bằng tiền điện tử.</strong>
+              <div>
+                <p className=""><strong>Các chức năng: </strong><span>Auth, hiển thị sản phẩm được cập nhật từ hệ thống Admin, giỏ hàng, đặt hàng, thanh toán với tiền điện tử, theo dõi đơn hàng, ...</span></p>
+              </div>
+              <p className="flex items-center"><strong>Github Page:</strong><span className="text-xs text-red-500 ml-12 italic">Chưa cập nhật</span></p>
+              <p>
+                <strong className="">Source Code: </strong><a className="text-blue-500" href="https://github.com/nguyentheduongyb/Web3" target="_blank">https://github.com/nguyentheduongyb/Web3</a>
+              </p>
+            </div>
           </div>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {arr.map((item: any, index: number) => (
-              <li key={index} className="rounded-md bg-[#f8f8f8] overflow-hidden h-full w-full">
-                <Link href={`/blog/${item.slug}`}>
-                  <div>
-                    <img className="" src="https://cdn.tgdd.vn/2023/04/content/thumb-600x360.jpg" alt="" />
-                  </div>
-                  <div className="p-2.5">
-                    <div className="text-sm text-[#333333]">
-                      <strong className="line-clamp-2 text-sm">{item.title}</strong>
-                      <div className="mt-2 text-sm">
-                        <span className="line-clamp-4">{item.shortcontent}</span>
-                      </div>
-                    </div>
-                  </div >
-                </ Link>
-              </li >
-            )
-            )}
-
-          </ul >
-        </div >
-
-
-        <div className="rounded bg-[#F8F8F8] mt-5 p-3">
-          <div className="flex items-center gap-3 text-red-400 py-4">
-            <HiFire fontSize={24} />
-            <h2 className="text-lg uppercase font-bold ">Top sản phẩm khuyến mãi</h2>
+          <div className="w-2/5 p-2 bg-white border rounded-2xl shadow-2xl">
+            <Carousel className="h-56">
+              <img className="w-full" src="/image/Broflix/1.png" alt="" />
+              <img className="w-full" src="/image/Broflix/2.png" alt="" />
+              <img className="w-full" src="/image/Broflix/3.png" alt="" />
+            </Carousel>
+            <div className="p-3">
+              <strong><span className="text-red-500">Broflix</span> trang xem thông tin các bộ phim</strong>
+              <div>
+                <p className=""><strong>Các chức năng: </strong><span>Hiển thị phim, xem chi tiết phim, tìm kiếm, ...</span></p>
+              </div>
+              <p className="flex items-center gap-2"><strong>Github Page:</strong><a className="text-blue-500" href="https://nguyentheduongyb.github.io/BroFlix/" target="_blank">https://nguyentheduongyb.github.io/BroFlix/</a></p>
+              <p>
+                <strong className="">Source Code: </strong><a className="text-blue-500" href="https://github.com/nguyentheduongyb/BroFlix" target="_blank">https://github.com/nguyentheduongyb/BroFlix</a>
+              </p>
+            </div>
           </div>
-          <ul className="flex flex-wrap md:flex-nowrap grid grid-cols-4 gap-2 pb-2 w-full">
-            <li className="rounded-md bg-white overflow-hidden border">
-              <a href="">
-                <div>
-                  <img className="pt-4" src="https://cdn.tgdd.vn/Products/Images/86/279453/chuot-co-day-gaming-asus-keris-thumb-2-600x600.jpeg" alt="" />
-                </div>
-              </a>
-              <aside className="inline-block rounded-[16px] bg-red-500 text-xs mt-2 text-white font-bold py-0.5 px-2 ml-3">
-                <div className="flex items-center gap-1">
-                  <img width="20px" src="/sale-icon.png" alt="" />
-                  <span className="uppercase">Giá rẻ quá</span>
-                </div>
-
-              </aside>
-              <div className="gap-2 p-2.5">
-                <div className="">
-                </div>
-                <div className="text-sm text-[#333333]">
-                  <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                  <div className="mt-2 flex flex-col gap-2">
-                    <strong className="text-lg text-red-500">1.000.000₫</strong>
-                    <p><span className="font-medium line-through">1.000.000₫</span><span className="ml-2 no-underline font-medium text-red-700">-20%</span></p>
-                  </div>
-                </div>
+          <div className="w-2/5 p-2 bg-white border rounded-2xl shadow-2xl">
+            <Carousel className="h-56">
+              <img className="w-full" src="/image/Tiktok/1.png" alt="" />
+              <img className="w-full" src="/image/Tiktok/2.png" alt="" />
+              <img className="w-full" src="/image/Tiktok/3.png" alt="" />
+            </Carousel>
+            <div className="p-3">
+              <strong>Website thời trang tích hợp thanh toán bằng tiền điện tử.</strong>
+              <div>
+                <p className=""><strong>Các chức năng: </strong><span>Auth, hiển thị sản phẩm được cập nhật từ hệ thống Admin, giỏ hàng, đặt hàng, thanh toán với tiền điện tử, theo dõi đơn hàng, ...</span></p>
               </div>
-
-            </li>
-            <li className="rounded-md bg-white overflow-hidden border">
-              <a href="">
-                <div>
-                  <img className="pt-4" src="https://cdn.tgdd.vn/Products/Images/86/279453/chuot-co-day-gaming-asus-keris-thumb-2-600x600.jpeg" alt="" />
-                </div>
-
-              </a>
-              <aside className="inline-block rounded-[16px] bg-red-500 text-xs mt-2 text-white font-bold py-0.5 px-2 ml-3">
-                <div className="flex items-center gap-1">
-                  <img width="20px" src="/sale-icon.png" alt="" />
-                  <span className="uppercase">Giá rẻ quá</span>
-                </div>
-
-              </aside>
-              <div className="gap-2 p-2.5">
-                <div className="">
-                </div>
-                <div className="text-sm text-[#333333]">
-                  <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                  <div className="mt-2 flex flex-col gap-2">
-                    <strong className="text-lg text-red-500">1.000.000₫</strong>
-                    <p><span className="font-medium line-through">1.000.000₫</span><span className="ml-2 no-underline font-medium text-red-700">-20%</span></p>
-                  </div>
-                </div>
+              <p className="flex items-center gap-2"><strong>Github Page:</strong><a className="text-blue-500" href="https://nguyentheduongyb.github.io/tiktok/" target="_blank">https://nguyentheduongyb.github.io/tiktok/</a></p>
+              <p>
+                <strong className="">Source Code: </strong><a className="text-blue-500" href="https://github.com/nguyentheduongyb/tiktok" target="_blank">https://github.com/nguyentheduongyb/tiktok</a>
+              </p>
+            </div>
+          </div>
+          <div className="w-2/5 p-2 bg-white border rounded-2xl shadow-2xl">
+            <Carousel className="h-56">
+              <img className="w-full" src="/image/Dashboard/1.png" alt="" />
+              <img className="w-full" src="/image/Dashboard/2.png" alt="" />
+              <img className="w-full" src="/image/Dashboard/3.png" alt="" />
+            </Carousel>
+            <div className="p-3">
+              <strong>Website thời trang tích hợp thanh toán bằng tiền điện tử.</strong>
+              <div>
+                <p className=""><strong>Các chức năng: </strong><span>Auth, hiển thị sản phẩm được cập nhật từ hệ thống Admin, giỏ hàng, đặt hàng, thanh toán với tiền điện tử, theo dõi đơn hàng, ...</span></p>
               </div>
-
-            </li>
-            <li className="rounded-md bg-white overflow-hidden border">
-              <a href="">
-                <div>
-                  <img className="pt-4" src="https://cdn.tgdd.vn/Products/Images/86/279453/chuot-co-day-gaming-asus-keris-thumb-2-600x600.jpeg" alt="" />
-                </div>
-
-              </a>
-              <aside className="inline-block rounded-[16px] bg-red-500 text-xs mt-2 text-white font-bold py-0.5 px-2 ml-3">
-                <div className="flex items-center gap-1">
-                  <img width="20px" src="/sale-icon.png" alt="" />
-                  <span className="uppercase">Giá rẻ quá</span>
-                </div>
-
-              </aside>
-              <div className="gap-2 p-2.5">
-                <div className="">
-                </div>
-                <div className="text-sm text-[#333333]">
-                  <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                  <div className="mt-2 flex flex-col gap-2">
-                    <strong className="text-lg text-red-500">1.000.000₫</strong>
-                    <p><span className="font-medium line-through">1.000.000₫</span><span className="ml-2 no-underline font-medium text-red-700">-20%</span></p>
-                  </div>
-                </div>
-              </div>
-
-            </li>
-            <li className="rounded-md bg-white overflow-hidden border">
-              <a href="">
-                <div>
-                  <img className="pt-4" src="https://cdn.tgdd.vn/Products/Images/86/279453/chuot-co-day-gaming-asus-keris-thumb-2-600x600.jpeg" alt="" />
-                </div>
-
-              </a>
-              <aside className="inline-block rounded-[16px] bg-red-500 text-xs mt-2 text-white font-bold py-0.5 px-2 ml-3">
-                <div className="flex items-center gap-1">
-                  <img width="20px" src="/sale-icon.png" alt="" />
-                  <span className="uppercase">Giá rẻ quá</span>
-                </div>
-
-              </aside>
-              <div className="gap-2 p-2.5">
-                <div className="">
-                </div>
-                <div className="text-sm text-[#333333]">
-                  <strong>Tải Avatarland - Khám phá vùng đất diệu kỳ</strong>
-                  <div className="mt-2 flex flex-col gap-2">
-                    <strong className="text-lg text-red-500">1.000.000₫</strong>
-                    <p><span className="font-medium line-through">1.000.000₫</span><span className="ml-2 no-underline font-medium text-red-700">-20%</span></p>
-                  </div>
-                </div>
-              </div>
-
-            </li>
-          </ul>
-
+              <p className="flex items-center gap-2"><strong>Github Page:</strong><a className="text-blue-500" href="https://nguyentheduongyb.github.io/dashboard/" target="_blank">https://nguyentheduongyb.github.io/dashboard/</a></p>
+              <p>
+                <strong className="">Source Code: </strong><a className="text-blue-500" href="https://github.com/nguyentheduongyb/dashboard" target="_blank">https://github.com/nguyentheduongyb/dashboard</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div >
-    </div >
+    </div>
   );
 };
 export default HomePage;
