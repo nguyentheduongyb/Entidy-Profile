@@ -68,7 +68,7 @@ const Header = () => {
 
                                         </div>
                                 </div>
-                                <Navbar.Collapse>
+                                {/* <Navbar.Collapse>
                                         <Navbar.Link
                                                 active
                                                 href="#"
@@ -89,7 +89,7 @@ const Header = () => {
                                         <Navbar.Link href="#">
                                                 Contact
                                         </Navbar.Link>
-                                </Navbar.Collapse>
+                                </Navbar.Collapse> */}
                         </Navbar>
                 </header>
         )
