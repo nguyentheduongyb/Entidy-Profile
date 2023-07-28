@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -50,14 +51,14 @@ const Header = () => {
                 }
         };
         return (
-                <header className="border-b w-full sticky top-0 z-[9999999999999999999999] bg-white">
+                <header className="border-b w-full sticky top-0 z-[9999999999999999999999] bg-white" style={{ zIndex: "9999999999999999999999" }}>
                         <Navbar
                                 className="container items-center sm:px-0 mx-0 bg-white"
                                 rounded
                         >
-                                <div className="flex md:hidden md:order-2">
+                                {/* <div className="flex md:hidden md:order-2">
                                         <Navbar.Toggle />
-                                </div>
+                                </div> */}
                                 <Link href="/" className="flex flex-1 md:flex-none ml-4">
                                         <Logo />
                                 </Link>

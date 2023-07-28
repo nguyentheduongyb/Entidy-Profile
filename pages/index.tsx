@@ -30,58 +30,58 @@ const HomePage = () => {
     <div className="bg-[#FBFCFE] h-full pb-12">
       <div className="container md:flex-row">
         <div className="flex justify-center">
-          <img className="w-3/5" src="/image/minion.png" alt="" />
+          <img className="md:w-3/5" src="/image/minion.png" alt="" />
         </div>
-        <div className="bg-white drop-shadow-[0_0_20px_rgba(0,0,0,0.25)] p-6 rounded-[24px] flex justify-between">
-          <div className="flex gap-12">
-            <div className="h-40 w-40 bg-center bg-no-repeat bg-cover rounded-[24px]" style={{ backgroundImage: 'url("/image/avatar-ntd.jpg")' }}></div>
-            <div className="flex flex-col justify-between">
+        <div className="bg-white drop-shadow-[0_0_20px_rgba(0,0,0,0.25)] p-6 rounded-[24px] flex md:flex-row flex-col justify-between">
+          <div className="flex md:flex-row md:gap-12 gap-6">
+            <div className="md:h-40 md:w-40 w-32 h-32 bg-center bg-no-repeat bg-cover rounded-[24px]" style={{ backgroundImage: 'url("/image/avatar-ntd.jpg")' }}></div>
+            <div className="flex flex-col flex-1 justify-between">
               <div>
-                <strong className="text-xl">Nguyễn Thế Dương</strong>
+                <strong className="md:text-xl">Nguyễn Thế Dương</strong>
                 <p className="text-sm text-gray-500 mt-2">Fullstack Developer</p>
               </div>
-              <div className="flex gap-2 mx-auto">
-                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] h-[44px] w-[44px] rounded-full flex items-center justify-center">
-                  <a href="https://github.com/nguyentheduongyb/" target="_blank"><BsGithub className="w-[20px] h-[20px]" /></a>
+              <div className="flex flex-wrap justify-center gap-2 mx-auto md:pr-8">
+                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
+                  <a href="https://github.com/nguyentheduongyb/" target="_blank"><BsGithub className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
-                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] h-[44px] w-[44px] rounded-full flex items-center justify-center">
-                  <a href="https://discord.gg/CWBV5Utg" target="_blank"><BsDiscord className="w-[16px] h-[16px]" /></a>
+                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
+                  <a href="https://discord.gg/CWBV5Utg" target="_blank"><BsDiscord className="md:w-[16px] md:h-[16px]" /></a>
                 </div>
-                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] h-[44px] w-[44px] rounded-full flex items-center justify-center">
-                  <a href="https://www.facebook.com/ntd.7302/" target="_blank"><BsFacebook className="w-[20px] h-[20px]" /></a>
+                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
+                  <a href="https://www.facebook.com/ntd.7302/" target="_blank"><BsFacebook className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
-                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] h-[44px] w-[44px] rounded-full flex items-center justify-center">
-                  <a href="https://www.instagram.com/ntd.7302/"><BsInstagram className="w-[20px] h-[20px]" /></a>
+                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
+                  <a href="https://www.instagram.com/ntd.7302/"><BsInstagram className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
-                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] h-[44px] w-[44px] rounded-full flex items-center justify-center">
-                  <a href="https://twitter.com/ntduong2002"><BsTwitter className="w-[20px] h-[20px]" /></a>
+                <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
+                  <a href="https://twitter.com/ntduong2002"><BsTwitter className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex px-8 flex-wrap w-1/2 border-l border-l-[2px]">
-            <div className="w-1/2">
+          <div className="flex md:px-8 pt-4 mt-4 md:mt-0 md:pt-0 flex-wrap md:w-1/2 border-t border-t-2 md:border-t-0 md:border-l md:border-l-[2px]">
+            <div className="xl:w-1/2 w-full">
               <p className="text-sm font-bold uppercase text-[#9B9B9B]">Email</p>
               <p>nguyentheduongyb@gmail.com</p>
             </div>
-            <div className="w-1/2">
+            <div className="xl:w-1/2 w-full">
               <p className="text-sm font-bold uppercase text-[#9B9B9B]">Ngày sinh</p>
               <p>07/03/2002</p>
             </div>
-            <div className="w-1/2">
+            <div className="xl:w-1/2 w-full">
               <p className="text-sm font-bold uppercase text-[#9B9B9B]">Liên hệ</p>
               <p>0985xxx759</p>
             </div>
-            <div className="w-1/2">
+            <div className="xl:w-1/2 w-full">
               <p className="text-sm font-bold uppercase text-[#9B9B9B]">Quê quán</p>
               <p>Yên Bái</p>
             </div>
           </div>
         </div>
-        <div className="flex gap-12 mt-12">
+        <div className="flex lg:flex-row flex-col gap-12 mt-12">
           <div>
-            <div className="rounded-[24px] bg-white drop-shadow-[0_0_20px_rgba(0,0,0,0.25)] p-6 flex flex-col gap-8">
+            <div className="rounded-[24px] bg-white drop-shadow-[0_0_20px_rgba(0,0,0,0.25)] p-6 flex lg:flex-col flex-row md:gap-8 gap-2">
               <div onClick={() => { setTab(1) }} className={`h-24 w-24 bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] rounded-[24px] flex flex-col items-center justify-center cursor-pointer ${tab == 1 ? "text-white bg-gradient-to-r from-cyan-500 to-teal-300" : ""}`}>
                 <LiaUserSolid size="32" color="#028fe3" />
                 <strong className="uppercase">Bản thân</strong>
@@ -97,6 +97,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="rounded-[24px] bg-white drop-shadow-[0_0_20px_rgba(0,0,0,0.25)] p-6 flex-1">
+            {/* Self */}
             <div className={`${tab == 1 ? "block" : "hidden"}`}>
               <strong className="text-2xl">Giới thiệu</strong>
               <div className="w-32 h-1 rounded bg-gradient-to-r from-purple-500 to-pink-500 mt-1 mb-6"></div>
@@ -105,13 +106,13 @@ const HomePage = () => {
               <p className="flex items-center gap-4 mt-12"><AiFillHome size="20" color="#8C939D" /><span>Hoàng Mai, Hà Nội</span></p>
               <p className="flex items-center gap-4 mt-2"><BsFillHeartFill size="20" color="#8C939D" /><span>Độc thân</span></p>
             </div>
-
+            {/*Project */}
             <div className={`${tab == 2 ? "block" : "hidden"}`}>
               <strong className="text-2xl">Sản phẩm cá nhân</strong>
               <div className="w-32 h-1 rounded bg-gradient-to-r from-purple-500 to-pink-500 mt-1"></div>
-              <div className="w-full flex flex-wrap justify-center gap-16 mt-12 mb-12">
-                <div className="md:w-4/5 lg:w-2/5 w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
-                  <Carousel className="h-56">
+              <div className="w-full flex flex-wrap justify-center md:gap-16 gap-8 mt-12 mb-12">
+                <div className="md:w-4/5 lg:w-[45%] w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
+                  <Carousel className="md:h-56 h-32">
                     <img className="w-full" src="/image/Entidy/1.png" alt="" />
                     <img className="w-full" src="/image/Entidy/2.png" alt="" />
                     <img className="w-full" src="/image/Entidy/3.png" alt="" />
@@ -125,13 +126,13 @@ const HomePage = () => {
                       <p className=""><strong>Các chức năng: </strong><span>Auth, hiển thị sản phẩm được cập nhật từ hệ thống Admin, giỏ hàng, đặt hàng, thanh toán với tiền điện tử, theo dõi đơn hàng, ...</span></p>
                     </div>
                     <p className="truncate"><strong>Github Page: </strong><span className="text-xs text-red-500 ml-12 italic">Chưa cập nhật</span></p>
-                    <p>
+                    <p className="truncate">
                       <strong className="">Source Code: </strong><a className="text-blue-500" href="https://github.com/nguyentheduongyb/Web3" target="_blank">https://github.com/nguyentheduongyb/Web3</a>
                     </p>
                   </div>
                 </div>
-                <div className="md:w-4/5 lg:w-2/5 w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
-                  <Carousel className="h-56">
+                <div className="md:w-4/5 lg:w-[45%] w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
+                  <Carousel className="md:h-56 h-32">
                     <img className="w-full" src="/image/Broflix/1.png" alt="" />
                     <img className="w-full" src="/image/Broflix/2.png" alt="" />
                     <img className="w-full" src="/image/Broflix/3.png" alt="" />
@@ -147,8 +148,8 @@ const HomePage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="md:w-4/5 lg:w-2/5 w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
-                  <Carousel className="h-56">
+                <div className="md:w-4/5 lg:w-[45%] w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
+                  <Carousel className="md:h-56 h-32">
                     <img className="w-full" src="/image/Tiktok/1.png" alt="" />
                     <img className="w-full" src="/image/Tiktok/2.png" alt="" />
                     <img className="w-full" src="/image/Tiktok/3.png" alt="" />
@@ -164,8 +165,8 @@ const HomePage = () => {
                     </p>
                   </div>
                 </div>
-                <div className="md:w-4/5 lg:w-2/5 w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
-                  <Carousel className="h-56">
+                <div className="md:w-4/5 lg:w-[45%] w-11/12 p-3 bg-white rounded-[26px] drop-shadow-[0_0_35px_rgba(0,0,0,0.25)]">
+                  <Carousel className="md:h-56 h-32">
                     <img className="w-full" src="/image/Dashboard/1.png" alt="" />
                     <img className="w-full" src="/image/Dashboard/2.png" alt="" />
                     <img className="w-full" src="/image/Dashboard/3.png" alt="" />
@@ -183,7 +184,7 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-
+            {/* Interests */}
             <div className={`${tab == 3 ? "block" : "hidden"}`}>
               <strong className="text-2xl">Sở thích</strong>
               <div className="w-32 h-1 rounded bg-gradient-to-r from-purple-500 to-pink-500 mt-1"></div>
@@ -193,8 +194,8 @@ const HomePage = () => {
                   <FaHeadphones size="48" color="#06B6D4" />
                   <strong className="text-xl">Nghe nhạc</strong>
                 </div>
-                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                  <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://datacare.vn/wp-content/uploads/2020/11/Banner-Am-Nhac-%E2%80%93-LVHB0911202015.jpg")' }}></div>
+                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                  <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://datacare.vn/wp-content/uploads/2020/11/Banner-Am-Nhac-%E2%80%93-LVHB0911202015.jpg")' }}></div>
                   <div className="flex-1">
                     <strong>Âm nhạc và nhạc Rap</strong>
                     <p className="mt-3">Cuộc sống thật tẻ nhạt nếu không có âm nhạc đối với mình là như vậy.</p>
@@ -207,8 +208,8 @@ const HomePage = () => {
                   <BsCoin size="48" color="#EF8E19" />
                   <strong className="text-xl">Tìm hiểu và đầu tư tiền điện tử</strong>
                 </div>
-                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                  <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://img.freepik.com/premium-vector/crypto-currency-horizontal-banner-bitcoin-digital-web-money-technology_48369-13318.jpg?w=2000")' }}></div>
+                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                  <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://img.freepik.com/premium-vector/crypto-currency-horizontal-banner-bitcoin-digital-web-money-technology_48369-13318.jpg?w=2000")' }}></div>
                   <div className="flex-1">
                     <strong>Tiền kỹ thuật số</strong>
                     <p className="mt-3">Mặc dù, mình đã từng đầu tư và mất rất nhiều trong thị trường tiền điện tử. Nhưng mình nghĩ đây sẽ là đồng tiền được sử dụng trong tương lai, vì nó ứng dụng công nghệ Blockchain. Blockchain là công nghệ chuỗi khối, nó rất khó để có thể hack. Hiện tại, phí giao dịch của tiền kỹ thuật số còn quá cao nên nó chưa được phổ biến.</p>
@@ -221,8 +222,8 @@ const HomePage = () => {
                   <FcSportsMode size="48" color="#EF8E19" />
                   <strong className="text-xl">Thể dục thể thao</strong>
                 </div>
-                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                  <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-color-silhouette-national-fitness-propaganda-poster-background-material-image_137512.jpg")' }}></div>
+                <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                  <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-color-silhouette-national-fitness-propaganda-poster-background-material-image_137512.jpg")' }}></div>
                   <div className="flex-1">
                     <strong>(Thể thao không ngồi nhiều bị trĩ)</strong>
                     <p className="mt-3">
@@ -238,8 +239,8 @@ const HomePage = () => {
                   <strong className="text-xl">Du lịch</strong>
                 </div>
                 <div className="flex flex-col gap-8">
-                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                    <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg")' }}></div>
+                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg")' }}></div>
                     <div className="flex-1">
                       <strong>Leo đồi, lội suối, ra biển</strong>
                       <p className="mt-3">
@@ -257,8 +258,8 @@ const HomePage = () => {
                   <strong className="text-xl">Chơi game</strong>
                 </div>
                 <div className="flex flex-col gap-8">
-                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                    <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/image/aog.jpg")' }}></div>
+                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/image/aog.jpg")' }}></div>
                     <div className="flex-1">
                       <strong>Liên quân mobile (AOG)</strong>
                       <p className="mt-3">
@@ -266,8 +267,8 @@ const HomePage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex gap-12">
-                    <div className="w-56 h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/image/aoe.jpg")' }}></div>
+                  <div className="p-4 rounded-xl bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.15)] flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div className="md:w-56 md:h-32 w-full h-32 rounded-2xl bg-center bg-cover bg-no-repeat" style={{ backgroundImage: 'url("/image/aoe.jpg")' }}></div>
                     <div className="flex-1">
                       <strong>Đế chế (AOE)</strong>
                       <p className="mt-3">
