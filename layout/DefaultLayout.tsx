@@ -4,7 +4,7 @@ import Footer from "~/components/common/Footer";
 const DefaultLayout = ({ children }: PropsWithChildren) => {
         return (
                 <>
-                        <Header />
+                        {/* <Header /> */}
                         <main className="w-full min-h-screen">
                                 {children}
                         </main>
