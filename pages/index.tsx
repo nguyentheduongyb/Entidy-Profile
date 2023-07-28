@@ -272,7 +272,7 @@ const HomePage = () => {
                     <div className="flex-1">
                       <strong>Đế chế (AOE)</strong>
                       <p className="mt-3">
-                        Đế chế là 1 tựa game được nổi từ rất lâu về trước chắc khoảng những năm 2000. Game này thì thường có nhiều người chơi ở lứa tuổi 8x 9x hơn là 2k. Mình 2002 nhưng cũng hứng thú với game vì sau 1 ngày đi làm về tối có game để chơi bạn cùng phòng.
+                        Đế chế là 1 tựa game được nổi từ rất lâu về trước chắc khoảng những năm 2000. Game này thì thường có nhiều người chơi ở lứa tuổi 8x 9x hơn là 2k. Mình 2002 nhưng cũng hứng thú với game vì sau 1 ngày đi làm về tối có game để chém bạn cùng phòng.
                       </p>
                     </div>
                   </div>
