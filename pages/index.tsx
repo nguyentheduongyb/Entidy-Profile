@@ -101,8 +101,8 @@ const HomePage = () => {
             <div className={`${tab == 1 ? "block" : "hidden"}`}>
               <strong className="text-2xl">Giới thiệu</strong>
               <div className="w-32 h-1 rounded bg-gradient-to-r from-purple-500 to-pink-500 mt-1 mb-6"></div>
-              <p>Mình tên là Dương. Mình từng theo học 2 năm tại trường Cao Đẳng Công nghệ Bách Khoa Hà Nội chuyên nghành Công nghệ thông tin. </p>
-              <p className="mt-4">Mình là lập trình viên Fullstack đã từng làm việc tại công ty PNG Soft nhưng sau đó nghỉ ngang. Mình có định hướng chuyển sang Blockchain và mảng marketing nên giờ mình đang đi làm với vị trí marketing tại Hà Nội. </p>
+              <p>Mình tên là Dương. Mình từng theo học tại trường Cao Đẳng Công nghệ Bách Khoa Hà Nội chuyên nghành Công nghệ thông tin. </p>
+              <p className="mt-4">Mình là lập trình viên Fullstack đã từng làm việc 6 tháng tại công ty PNG Soft. </p>
               <p className="flex items-center gap-4 mt-12"><AiFillHome size="20" color="#8C939D" /><span>Hoàng Mai, Hà Nội</span></p>
               <p className="flex items-center gap-4 mt-2"><BsFillHeartFill size="20" color="#8C939D" /><span>Độc thân</span></p>
             </div>
