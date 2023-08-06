@@ -27,6 +27,11 @@ const HomePage = () => {
   }, [])
 
   return (
+
+
+
+
+
     <div className="bg-[#FBFCFE] h-full pb-12">
       <div className="container md:flex-row">
         <div className="flex justify-center">
