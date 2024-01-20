@@ -53,10 +53,10 @@ const HomePage = () => {
                   <a href="https://discord.gg/CWBV5Utg" target="_blank"><BsDiscord className="md:w-[16px] md:h-[16px]" /></a>
                 </div>
                 <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
-                  <a href="https://www.facebook.com/ntd.7302/" target="_blank"><BsFacebook className="md:w-[20px] md:h-[20px]" /></a>
+                  <a href="https://www.facebook.com/entidy73/" target="_blank"><BsFacebook className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
                 <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
-                  <a href="https://www.instagram.com/ntd.7302/"><BsInstagram className="md:w-[20px] md:h-[20px]" /></a>
+                  <a href="https://www.instagram.com/entidy73"><BsInstagram className="md:w-[20px] md:h-[20px]" /></a>
                 </div>
                 <div className="bg-white drop-shadow-[0_0_10px_rgba(0,0,0,0.3)] md:h-[44px] md:w-[44px] h-[28px] w-[28px] rounded-full flex items-center justify-center">
                   <a href="https://twitter.com/ntduong2002"><BsTwitter className="md:w-[20px] md:h-[20px]" /></a>
