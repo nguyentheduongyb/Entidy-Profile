@@ -34,7 +34,7 @@ const Shop = () => {
                                                 <span className='mt-4 text-xs
                                                 '>Xem sản phẩm và thử trực tiếp tại cửa hàng. </span>
                                                 <br />
-                                                <span>Số điện thoại: 077.8888.723</span>
+                                                <span>Số điện thoại: 077.8888.723. </span>
                                                 <span>Địa chỉ: 176 Điện Biên, Thành Phố Yên Bái, Tỉnh Yên Bái.</span>
                                                 <span>Cửa hàng chúng tôi chuyên cung cấp các sản phẩm áo, quần, giày, dép, túi sách được nhập khẩu từ Quảng Châu. Với chất vải siêu sịn. Bạn có thể đến trực tiếp cửa hàng để thử đồ hoặc liên hệ số điện thoại để nhận được tư vấn.</span>
                                         </p>
