@@ -38,7 +38,7 @@ const Shop = () => {
                                                 <span>Địa chỉ: 176 Điện Biên, Thành Phố Yên Bái, Tỉnh Yên Bái.</span>
                                                 <span>Cửa hàng chúng tôi chuyên cung cấp các sản phẩm áo, quần, giày, dép, túi sách được nhập khẩu từ Quảng Châu. Với chất vải siêu sịn. Bạn có thể đến trực tiếp cửa hàng để thử đồ hoặc liên hệ số điện thoại để nhận được tư vấn.</span>
                                         </p>
-                                        {/* <div className="mt-4 flex justify-center space-x-3 lg:mt-6">
+                                        <div className="mt-4 flex justify-center space-x-3 lg:mt-6">
                                                 <a
                                                         href="https://www.facebook.com/profile.php?id=100021603316490"
                                                         className="inline-flex items-center rounded-lg bg-cyan-700 px-4 py-2 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
@@ -51,7 +51,7 @@ const Shop = () => {
                                                 >
                                                         Message
                                                 </a>
-                                        </div> */}
+                                        </div>
                                 </div>
                         </div>
                 </div >
