@@ -10,7 +10,7 @@ const Shop = () => {
         return (
                 <div className="w-full h-screen relative flex items-center justify-center">
                         <div className="flex overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md dark:border-gray-700 dark:bg-gray-800 flex-col max-w-sm">
-                                <div className='bg-center bg-cover bg-no-repeat w-full pt-[55%]' style={{ backgroundImage: 'url("https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/435758155_1486511498745613_770606530630491053_n.jpg?stp=cp6_dst-jpg&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFGIzYQs2dXlfs8wIgwStk5f06wzhv5lWp_TrDOG_mVamC0-oTa4-1nhyingiEUvfM6Gv48s7xvbmUkqPatkqB_&_nc_ohc=z-auxZwyWxIQ7kNvgEQ2KFB&_nc_ht=scontent.fhan17-1.fna&cb_e2o_trans=q&oh=00_AYDrcuc9lq-KgHgCB4iw9c_PHn6jWHvMNaS79bh5qgAIFg&oe=665BB63B")' }}></div>
+                                <div className='bg-center bg-cover bg-no-repeat w-full pt-[55%]' style={{ backgroundImage: 'url("/435758155_1486511498745613_770606530630491053_n.jpg")' }}></div>
                                 <div className="p-4 flex-col items-center justify-center">
                                         <div className="flex flex-col justify-center items-center gap">
                                                 <div className="relative">
